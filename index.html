@@ -3,7 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Webpage</title>
   </head>
-  <body></body>
+  <body>
+    <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'whoiam')">
+        Who I Am
+      </button>
+      <button class="tablinks" onclick="openCity(event, 'portfolio')">
+        Portfolio
+      </button>
+      <button class="tablinks" onclick="openCity(event, 'contact')">
+        Contact
+      </button>
+    </div>
+
+    <div id="whoiam" class="tabcontent">
+      <h1>Who I Am</h1>
+      <p>TextTextText</p>
+    </div>
+    <div id="portfolio" class="tabcontent">
+      <h1>Portfolio</h1>
+      <p>TextTextText</p>
+    </div>
+    <div id="contact" class="tabcontent">
+      <h1>Contact</h1>
+      <p>TextTextText</p>
+    </div>
+  </body>
 </html>
