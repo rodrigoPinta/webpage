@@ -8,6 +8,7 @@
   justify-content: space-around;
   align-items: center;
   height: 6rem;
+  border-bottom: 0.2px solid rgba(26, 26, 46, 0.95);
 }
 
 /**************************/
@@ -26,7 +27,7 @@
   display: inline-block;
   text-decoration: none;
   position: relative;
-  color: white;
+  color: #e8fffc;
   font-weight: 500;
   font-size: 1.6rem;
   transition: all 0.3s;
@@ -53,4 +54,66 @@
 .main-nav-link:hover::after {
   width: 100%; /* expands the line fully under the text */
   box-shadow: 0 0 8px rgba(59, 130, 246, 0.5);
+}
+
+/**************************/
+/* home IN SECTION */
+/**************************/
+
+.home-section {
+  background-color: rgba(26, 26, 46, 0.95);
+  padding: 4rem 0 2rem 0;
+}
+
+.home {
+  max-width: 80rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+  display: flex;
+}
+
+.text-box {
+  text-align: center;
+}
+
+.home-heading-primary {
+  font-size: 6rem;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 1.4px;
+  background: linear-gradient(90deg, #8b5cf6, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 12px rgba(59, 130, 246, 0.7);
+  margin-bottom: 1.6rem;
+}
+
+.home-heading-secondary {
+  font-size: 2rem;
+  font-weight: 600;
+  background: linear-gradient(90deg, #8b5cf6, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 4px rgba(59, 130, 246, 0.7);
+  margin-bottom: 1.6rem;
+}
+
+.home-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #e8fffc;
+  text-shadow: 0 0 2px rgba(59, 130, 246, 0.6);
+}
+
+.home-heading-primary-me {
+  font-size: 4rem;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 1.4px;
+  background: linear-gradient(90deg, #8b5cf6, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 12px rgba(59, 130, 246, 0.7);
+  margin-bottom: 1.6rem;
 }
