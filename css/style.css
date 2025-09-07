@@ -78,7 +78,7 @@
 }
 
 .btn-projects:hover {
-  transform: translateY(2px);
+  transform: translateY(2.2px);
   box-shadow: 0 10px 30px rgba(59, 130, 246, 0.4);
 }
 
