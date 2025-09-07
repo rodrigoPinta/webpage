@@ -3,16 +3,54 @@
 /**************************/
 
 .header {
-  background-color: red;
+  background-color: rgba(26, 26, 46, 0.95);
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 10rem;
+  height: 6rem;
 }
+
+/**************************/
+/* NAVIGATION */
+/**************************/
 
 .main-nav-list {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 4.8rem;
+  gap: 5.2rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+  color: white;
+  font-weight: 500;
+  font-size: 1.6rem;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #a78bfa;
+  text-shadow: 0 0 5px rgba(59, 130, 246, 0.3);
+}
+
+.main-nav-link::after {
+  content: ""; /* creates an empty element */
+  position: absolute;
+  bottom: -3px; /* sticks to the bottom of the link */
+  left: 50%; /* starts at the center */
+  width: 0; /* initially hidden (no line) */
+  height: 2px;
+  background: linear-gradient(90deg, #2261c6, #8b5cf6);
+  transition: all 0.3s ease; /* makes it animate */
+  transform: translateX(-50%); /* centers the line */
+}
+
+.main-nav-link:hover::after {
+  width: 100%; /* expands the line fully under the text */
+  box-shadow: 0 0 8px rgba(59, 130, 246, 0.5);
 }
