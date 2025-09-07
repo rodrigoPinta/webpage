@@ -9,6 +9,11 @@
   align-items: center;
   height: 6rem;
   border-bottom: 0.2px solid rgba(26, 26, 46, 0.95);
+  position: fixed;
+  top: 0; /* lock at the very top */
+  left: 0; /* align to the left edge */
+  width: 100%; /* span across the screen */
+  z-index: 1000; /* make sure it stays above other elements */
 }
 
 /**************************/
@@ -35,7 +40,7 @@
 
 .main-nav-link:hover,
 .main-nav-link:active {
-  color: #a78bfa;
+  color: #3b82f6;
   text-shadow: 0 0 5px rgba(59, 130, 246, 0.3);
 }
 
@@ -46,7 +51,7 @@
   left: 50%; /* starts at the center */
   width: 0; /* initially hidden (no line) */
   height: 2px;
-  background: linear-gradient(90deg, #2261c6, #8b5cf6);
+  background: linear-gradient(90deg, #3b82f6, #3b82f6);
   transition: all 0.3s ease; /* makes it animate */
   transform: translateX(-50%); /* centers the line */
 }
@@ -56,13 +61,34 @@
   box-shadow: 0 0 8px rgba(59, 130, 246, 0.5);
 }
 
+.btn-projects,
+.btn-projects:link {
+  margin-top: 1.2rem;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 0.8rem 1.6rem;
+  border-radius: 50px;
+  font-size: 1.6rem;
+  border: 2px solid #3b82f6; /* optional, to see the border */
+  background: linear-gradient(90deg, #8b5cf6, #3b82f6);
+  color: white; /* text color */
+  transition: all 0.3s;
+}
+
+.btn-projects:hover {
+  transform: translateY(2px);
+  box-shadow: 0 10px 30px rgba(59, 130, 246, 0.4);
+}
+
 /**************************/
-/* home IN SECTION */
+/* HOME SECTION */
 /**************************/
 
 .home-section {
-  background-color: rgba(26, 26, 46, 0.95);
-  padding: 4rem 0 2rem 0;
+  background-color: rgba(21, 21, 37, 1);
+  padding: 8rem 0 4rem 0;
 }
 
 .home {
@@ -81,11 +107,12 @@
   font-weight: 800;
   text-align: center;
   letter-spacing: 1.4px;
-  background: linear-gradient(90deg, #8b5cf6, #3b82f6);
+  background: linear-gradient(90deg, #7a45f4, #4483e9);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: 0 0 12px rgba(59, 130, 246, 0.7);
-  margin-bottom: 1.6rem;
+  text-shadow: 0 0 8px rgba(59, 130, 246, 0.7);
+  margin-bottom: 2.2rem;
+  margin-top: 2rem;
 }
 
 .home-heading-secondary {
@@ -99,6 +126,7 @@
 }
 
 .home-description {
+  margin-bottom: 1.2rem;
   font-size: 2rem;
   line-height: 1.6;
   font-weight: 400;
