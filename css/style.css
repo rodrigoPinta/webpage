@@ -1,0 +1,18 @@
+/**************************/
+/* HEADER */
+/**************************/
+
+.header {
+  background-color: red;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 10rem;
+}
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 4.8rem;
+}
