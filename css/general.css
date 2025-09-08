@@ -1,4 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+/**************************/
+/* GLOBAL SECTIONS */
+/**************************/
+
+/*.section {
+/*width: 100%;            /* span full screen */
+/*padding: 6rem 0;        /* vertical spacing */
+/*}
+
+/* .section-container {
+/*  max-width: 80rem;       /* readable width */
+/*  margin: 0 auto;         /* center horizontally */
+/*  padding: 0 2rem;        /* prevent text from touching edges */
+/* }
+
 /*
 --- 01 TYPOGRAPHY SYSTEM
 - Font sizes (px)
@@ -62,5 +78,10 @@ html {
 body {
   font-family: nunito, sans-serif;
   line-height: 1;
+  background: linear-gradient(
+    90deg,
+    rgba(19, 19, 33, 0.97),
+    rgba(21, 21, 37, 1)
+  );
   /* color: white; */
 }

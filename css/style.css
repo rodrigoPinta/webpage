@@ -145,3 +145,36 @@
   text-shadow: 0 0 12px rgba(59, 130, 246, 0.7);
   margin-bottom: 1.6rem;
 }
+
+/**************************/
+/* ABOUT ME SECTION */
+/**************************/
+
+.about-me-section {
+  align-self: center;
+  background-color: rgba(26, 26, 46, 0.95);
+  margin: 1.2rem auto;
+  padding: 2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  width: 100%;
+  max-width: 80rem;
+}
+
+.about-me {
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.about-me-text {
+  text-align: left;
+}
+
+.about-me-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #e8fffc;
+  text-shadow: 0 0 2px rgba(59, 130, 246, 0.6);
+}
