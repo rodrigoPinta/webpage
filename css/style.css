@@ -178,3 +178,57 @@
   color: #e8fffc;
   text-shadow: 0 0 2px rgba(59, 130, 246, 0.6);
 }
+
+/**************************/
+/* SKILLS SECTION */
+/**************************/
+
+.skills-section {
+  width: 100%;
+  padding: 6rem 0;
+}
+
+.skills-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  justify-content: center;
+}
+
+.skill {
+  font-size: 1.2rem;
+  max-width: 220px; /* keeps the skill box compact */
+  margin: 0 auto; /* centers the skill inside the grid cell */
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* subtle shadow */
+  transition: transform 0.3s, box-shadow 0.3s; /* smooth hover effect */
+}
+
+.heading-tree {
+  margin-top: 12px;
+  color: #e8fffc;
+}
+
+i {
+  font-size: 60px;
+}
+
+.skill-text {
+  display: block;
+  font-size: 1.4rem;
+  margin-top: 0.8rem;
+  color: #e8fffc;
+  text-align: center;
+  max-width: 180px; /* limit the width so text wraps */
+  margin-left: auto; /* center inside skill block */
+  margin-right: auto;
+}
