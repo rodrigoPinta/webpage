@@ -310,6 +310,7 @@ i {
 }
 
 .project-heading {
+  margin-top: 1.2rem;
   font-size: 1.6rem;
   font-weight: 900;
   text-align: center;
@@ -323,7 +324,7 @@ i {
 
 .project-text {
   display: block;
-  font-size: 1rem; /* slightly smaller than heading */
+  font-size: 1.2rem; /* slightly smaller than heading */
   line-height: 1.6; /* good readability */
   text-align: left; /* matches heading */
   color: #cde8e4; /* softer than heading for hierarchy */
@@ -338,4 +339,32 @@ i {
 .project-icon {
   font-size: 4.4rem;
   color: #cde8e4;
+}
+
+.project-buttons {
+  display: flex;
+  gap: 0.5rem; /* space between buttons */
+  margin-bottom: 0.5rem; /* space below buttons */
+}
+
+.src-project {
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 0.4rem 0.8rem; /* smaller padding */
+  border-radius: 25px; /* smaller rounded corners */
+  font-size: 0.9rem; /* slightly smaller text */
+  border: 2px solid #3b82f6;
+  background: linear-gradient(90deg, #8b5cf6, #3b82f6);
+  color: white;
+  transition: all 0.3s;
+  text-align: center;
+  line-height: 1.2;
+  font-family: inherit;
+}
+
+.src-project:hover {
+  text-decoration: underline;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
