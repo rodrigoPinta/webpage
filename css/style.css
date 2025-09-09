@@ -196,16 +196,19 @@
 
 .skills {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   justify-content: center;
 }
 
 .skill {
+  /* margin: 0 auto;  centers the skill inside the grid cell */
+  /* max-width: 220px;  keeps the skill box compact */
+  margin: 0; /* remove auto-centering */
+  width: 100%; /* fill the column */
+  max-width: none; /* let grid define the width */
   font-size: 1.2rem;
-  max-width: 220px; /* keeps the skill box compact */
-  margin: 0 auto; /* centers the skill inside the grid cell */
-  padding: 1.5rem;
+  padding: 2rem;
   border-radius: 10px;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.1);
@@ -231,4 +234,9 @@ i {
   max-width: 180px; /* limit the width so text wraps */
   margin-left: auto; /* center inside skill block */
   margin-right: auto;
+}
+
+.skill:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
 }
