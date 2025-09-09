@@ -308,3 +308,34 @@ i {
   margin: 0; /* remove auto centering */
   padding: 0 2rem; /* optional: keep page padding */
 }
+
+.project-heading {
+  font-size: 1.6rem;
+  font-weight: 900;
+  text-align: center;
+  letter-spacing: 1.4px;
+  line-height: 1.6;
+  font-weight: 600;
+  color: #e8fffc;
+  text-transform: uppercase;
+  text-shadow: 0 0 2px rgba(59, 130, 246, 0.6);
+}
+
+.project-text {
+  display: block;
+  font-size: 1rem; /* slightly smaller than heading */
+  line-height: 1.6; /* good readability */
+  text-align: left; /* matches heading */
+  color: #cde8e4; /* softer than heading for hierarchy */
+  max-width: 300px; /* keeps text blocks compact */
+  margin: 0.5rem 0 1rem 0; /* spacing above and below */
+}
+
+.size-fit {
+  font-size: 1.4rem;
+}
+
+.project-icon {
+  font-size: 4.4rem;
+  color: #cde8e4;
+}
