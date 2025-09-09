@@ -62,7 +62,8 @@
 }
 
 .btn-projects,
-.btn-projects:link {
+.btn-projects:link,
+.btn-projects:visited {
   margin-top: 1.2rem;
   display: inline-block;
   text-decoration: none;
@@ -75,9 +76,14 @@
   background: linear-gradient(90deg, #8b5cf6, #3b82f6);
   color: white; /* text color */
   transition: all 0.3s;
+  text-align: center;
+  line-height: 1.4;
+  font-family: inherit;
 }
 
-.btn-projects:hover {
+.btn-projects:hover,
+.btn-projects:focus,
+.btn-projects:active {
   transform: translateY(2.2px);
   box-shadow: 0 10px 30px rgba(59, 130, 246, 0.4);
 }
@@ -239,4 +245,66 @@ i {
 .skill:hover {
   transform: translateY(-5px) scale(1.02);
   box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+}
+
+/**************************/
+/* PROJECTS SECTION */
+/**************************/
+
+.projects-section {
+  padding: 1rem 0 4rem 0;
+  align-self: center;
+  background-color: rgba(26, 26, 46, 0.95);
+}
+
+.projects-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.project {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+}
+
+.see-more {
+  display: inline-block;
+  margin: 1rem auto 0 auto;
+  padding: 0.8rem 1.6rem 0.8rem 1.6rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  background: linear-gradient(90deg, #7a45f4, #8b5cf6, #3b82f6);
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.see-more:hover {
+  transform: translateY(-1.5px);
+  background: linear-gradient(90deg, #8b5cf6, #7a45f4, #3b82f6);
+}
+
+.see-more-wrapper {
+  display: flex;
+  justify-content: flex-end; /* pushes button to the right */
+  max-width: none; /* allow full page width */
+  margin: 0; /* remove auto centering */
+  padding: 0 2rem; /* optional: keep page padding */
 }
