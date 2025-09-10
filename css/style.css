@@ -29,13 +29,14 @@
 
 .main-nav-link:link,
 .main-nav-link:visited {
+  position: relative; /* fix added */
   display: inline-block;
   text-decoration: none;
-  position: relative;
   color: #e8fffc;
   font-weight: 500;
   font-size: 1.6rem;
   transition: all 0.3s;
+  z-index: 1; /* ensure text is above the underline */
 }
 
 .main-nav-link:hover,
@@ -45,20 +46,25 @@
 }
 
 .main-nav-link::after {
-  content: ""; /* creates an empty element */
+  content: "";
   position: absolute;
-  bottom: -3px; /* sticks to the bottom of the link */
-  left: 50%; /* starts at the center */
-  width: 0; /* initially hidden (no line) */
+  left: 0;
+  bottom: 0; /* align exactly with the bottom of text */
   height: 2px;
-  background: linear-gradient(90deg, #3b82f6, #3b82f6);
-  transition: all 0.3s ease; /* makes it animate */
-  transform: translateX(-50%); /* centers the line */
+  width: 100%;
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+  transform: scaleX(0); /* start hidden */
+  transform-origin: center; /* expand from center */
+  transition: transform 0.3s ease;
+  z-index: -1;
 }
 
 .main-nav-link:hover::after {
-  width: 100%; /* expands the line fully under the text */
-  box-shadow: 0 0 8px rgba(59, 130, 246, 0.5);
+  transform: scaleX(1);
+}
+
+.main-nav-link:hover {
+  color: #3b82f6;
 }
 
 .btn-projects,
@@ -237,7 +243,7 @@ i {
   margin-top: 0.8rem;
   color: #e8fffc;
   text-align: center;
-  max-width: 180px; /* limit the width so text wraps */
+  max-width: none; /* limit the width so text wraps */
   margin-left: auto; /* center inside skill block */
   margin-right: auto;
 }
