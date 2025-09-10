@@ -270,6 +270,8 @@ i {
 }
 
 .project {
+  display: flex;
+  flex-direction: column;
   background-color: rgba(255, 255, 255, 0.05);
   padding: 1.5rem;
   border-radius: 10px;
@@ -345,6 +347,7 @@ i {
   display: flex;
   gap: 0.5rem; /* space between buttons */
   margin-bottom: 0.5rem; /* space below buttons */
+  margin-top: auto;
 }
 
 .src-project {
@@ -367,4 +370,76 @@ i {
 .src-project:hover {
   text-decoration: underline;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/**************************/
+/* CONTACT SECTION */
+/**************************/
+
+.contact-me-section {
+  background-color: rgba(21, 21, 37, 1);
+  padding: 4rem 0;
+}
+
+.contact-me-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background: #2b2b40; /* slightly lighter than section for contrast */
+  border-radius: 12px; /* rounded corners for card effect */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); /* subtle shadow */
+}
+
+.contact-me-heading {
+  margin-bottom: 1.2rem;
+  margin-top: 0.8rem;
+  font-size: 2.6rem;
+  text-align: center;
+  letter-spacing: 1.4px;
+  line-height: 1.6;
+  font-weight: 800;
+  color: #e8fffc;
+  background: linear-gradient(90deg, #7a45f4, #4483e9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  text-shadow: 0 0 2px rgba(59, 130, 246, 0.6);
+}
+
+.contact-options a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  text-decoration: none;
+  border-radius: 8px;
+  background: #1d4ed8; /* blue */
+  color: white;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.contact-options a:hover {
+  background: #2563eb;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.contact-options a i {
+  margin-right: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.contact-options a:first-child {
+  background: #1d4ed8; /* blue for email */
+}
+.contact-options a:first-child:hover {
+  background: #2563eb;
+}
+
+.contact-options a:last-child {
+  background: #25d366; /* WhatsApp green */
+}
+.contact-options a:last-child:hover {
+  background: #1ebe5c;
 }
