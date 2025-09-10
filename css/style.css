@@ -413,16 +413,9 @@ i {
   margin: 0.5rem;
   text-decoration: none;
   border-radius: 8px;
-  background: #1d4ed8; /* blue */
   color: white;
   font-weight: 600;
-  transition: background 0.3s;
-}
-
-.contact-options a:hover {
-  background: #2563eb;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s ease;
 }
 
 .contact-options a i {
@@ -430,18 +423,28 @@ i {
   font-size: 1.1rem;
 }
 
-.contact-options a:first-child {
-  background: #1d4ed8; /* blue for email */
+/* Email button */
+.contact-options a.email-link {
+  background: #1d4ed8;
 }
-.contact-options a:first-child:hover {
+.contact-options a.email-link:hover {
   background: #2563eb;
 }
 
-.contact-options a:last-child {
-  background: #25d366; /* WhatsApp green */
+/* WhatsApp button */
+.contact-options a.whatsapp-link {
+  background: #25d366;
 }
-.contact-options a:last-child:hover {
+.contact-options a.whatsapp-link:hover {
   background: #1ebe5c;
+}
+
+/* LinkedIn button */
+.contact-options a.linkedin-link {
+  background: #0a66c2;
+}
+.contact-options a.linkedin-link:hover {
+  background: #004182;
 }
 
 /* Hamburger Button */
