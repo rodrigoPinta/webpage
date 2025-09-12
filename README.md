@@ -3,6 +3,7 @@ mywebpage
 upcoming features:
 -articles;
 -portuguese/english toggle switch button;
+-deploy on netlify;
 
 
 # Rodrigo Pinta Portfolio
